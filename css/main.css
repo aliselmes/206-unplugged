@@ -97,6 +97,69 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* General Styles */
+
+   html {
+     font-size: 16px;
+   }
+
+   body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: normal;
+   }
+
+   ul,
+   ol {
+     font-size: 1.125em;
+     list-style-type: none;
+   }
+
+   a {
+      color: #e2e3ed;
+      text-decoration: none;
+   }
+
+   h1 {
+     font-size: 3.75em;
+   }
+
+   h2 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 3em;
+   }
+
+   h3 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 2.25em;
+   }
+
+   h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.875em;
+   }
+
+   p {
+
+   }
+
+   img {
+
+   }
+
+   figure {
+
+   }
+
+   address {
+     font-style: normal;
+   }
+
+   .content-wrapper {
+
+   }
+
+
 
 /* --------------- Base Styles ------------------*/
 .content-wrapper {
@@ -142,9 +205,10 @@ header nav {
 
 header nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 70%;
+    padding: 0;
 }
 
 /* -------------- Mobile Styles - Homepage ------------------ */
@@ -239,6 +303,10 @@ aside {
   padding: 50px 0;
 }
 
+.reviews h3 {
+  width: 100%;
+}
+
 #reviews-img {
 
 }
@@ -247,9 +315,7 @@ aside {
 
 }
 
-.reviews h3{
-  width: 50%;
-}
+
 
 /* -------------- Mobile Styles - About page ------------------ */
 .content-wrapper {
@@ -289,6 +355,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.faq h2 {
+  width: 90%;
+}
+
 /* Footer */
 
 footer {
@@ -317,7 +387,7 @@ footer .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 50px;
+  padding: 50px 0 25px 0;
 }
 
 .social-icons {
@@ -436,7 +506,7 @@ footer .footer-content {
   }
 
   header nav {
-    width: 20%;
+    width: 25%;
   }
 
   header nav ul {
@@ -489,6 +559,8 @@ aside .content-wrapper .form {
   width: 300px;
 }
 
+
+
 /*Footer*/
 
 footer .content-wrapepr {
@@ -501,7 +573,7 @@ footer .content-wrapepr {
   width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
 }
 
@@ -533,9 +605,11 @@ footer .copyright {
 
     .contact-content {
         display:flex;
-        justify-content:space-between;
-        align-items:center;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
 }
+
 
 
 /* ==========================================================================
@@ -586,8 +660,8 @@ aside .content-wrapper.form {
 }
 
 /*Feature*/
-.features h2 {
-  width: 88%;
+.features h3 {
+  width: 75%;
 }
 
 
@@ -599,6 +673,8 @@ aside .content-wrapper.form {
 .reviews article div {
   width: 50%;
 }
+
+
 
 /* ==========================================================================
    About Page
