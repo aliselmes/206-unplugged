@@ -106,6 +106,7 @@ textarea {
    body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #e2e3ed;
     line-height: normal;
    }
 
@@ -113,6 +114,7 @@ textarea {
    ol {
      font-size: 1.125em;
      list-style-type: none;
+     font-weight: bold;
    }
 
    a {
@@ -121,26 +123,36 @@ textarea {
    }
 
    h1 {
+     font-family: 'Poppins', sans-serif;
      font-size: 3.75em;
+     font-weight: 400;
    }
 
    h2 {
      font-family: 'Poppins', sans-serif;
      font-size: 3em;
+     font-weight: 400;
+     margin-top: 0;
    }
 
    h3 {
      font-family: 'Poppins', sans-serif;
      font-size: 2.25em;
+     font-weight: 400;
+     margin-top: 0;
    }
 
    h4 {
      font-family: 'Poppins', sans-serif;
      font-size: 1.875em;
+     font-weight: 400;
+     margin-top: 0;
    }
 
    p {
-
+     font-size: 1.125em;
+     font-weight: 400;
+     color: #b1b8bd;
    }
 
    img {
@@ -175,6 +187,7 @@ header, footer {
     justify-content:center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #202322;
 }
 
 /* Header Styles */
@@ -209,6 +222,7 @@ header nav ul {
     align-items: center;
     width: 70%;
     padding: 0;
+    text-transform: uppercase;
 }
 
 /* -------------- Mobile Styles - Homepage ------------------ */
@@ -217,16 +231,19 @@ header nav ul {
 .hero-area {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
+    height: 600px;
 }
 
 .hero-area .content-wrapper {
-
+    padding: 0;
+    margin: 0;
 }
 
 .hero-area h1 {
   padding: 50px 0;
+  margin: 0;
 }
 
 /* Sign up Form */
@@ -235,6 +252,15 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
+}
+
+aside .content-wrapper {
+  align-items: flex-start;
+}
+
+aside .content-wrapper h4 {
+  margin-top: 0;
 }
 
 .form-description {
@@ -246,6 +272,37 @@ aside {
   padding-bottom: 50px;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #b8b9c0;
+  font-style: italic;
+  font-size: 1.125em;
+  height: 50px;
+  padding-left: 10px;
+}
+
+input[type=button] {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  height: 50px;
+}
+
+input[type=button]:hover {
+  cursor: pointer;
+}
 
 /* Features Section */
 .features {
@@ -261,6 +318,7 @@ aside {
 
 .features .content-wrapper {
       width: 90%;
+      padding: 50px 0;
 }
 
 .features h2 {
@@ -293,10 +351,11 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
 }
 
 .reviews .content-wrapper {
-
+    padding: 100px 0;
 }
 
 .reviews h2 {
@@ -333,6 +392,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 100px;
 }
 
 .contact-content p {
@@ -346,6 +406,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 100px 0;
 }
 
 .faq .content-wrapper {
@@ -395,7 +456,6 @@ footer .footer-content {
   justify-content: space-around;
   align-items: center;
 }
-
 
 
 
