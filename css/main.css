@@ -344,15 +344,21 @@ input[type=button]:hover {
 .features article {
   width: 55%;
   padding: 25px 0;
-  display:
+
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+  color: #e2e3ed;
 }
 
 .fontawesome-icon {
-
+  text-align: center;
 }
 
 .features-item-description {
-
+  text-align: center;
 }
 
 /* Reviews Section */
@@ -658,7 +664,7 @@ aside p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
   flex-basis: 50%;
 }
 
