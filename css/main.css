@@ -124,7 +124,7 @@ textarea {
 
    h1 {
      font-family: 'Poppins', sans-serif;
-     font-size: 3.75em;
+     font-size: 2.25em;
      font-weight: 400;
    }
 
@@ -156,11 +156,11 @@ textarea {
    }
 
    img {
-
+     width: 100%;
    }
 
    figure {
-
+     margin: 0;
    }
 
    address {
@@ -225,6 +225,14 @@ header nav ul {
     text-transform: uppercase;
 }
 
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 /* -------------- Mobile Styles - Homepage ------------------ */
 
 /* Hero area */
@@ -234,6 +242,8 @@ header nav ul {
     align-items: flex-start;
     flex-flow: row wrap;
     height: 600px;
+    background: url('../img/unplugged-hero-img.jpg') center no-repeat ;
+    background-size: cover;
 }
 
 .hero-area .content-wrapper {
@@ -272,9 +282,6 @@ aside .content-wrapper h4 {
   padding-bottom: 50px;
 }
 
-aside .form {
-  margin-top: 30px;
-}
 
 input[type=text] {
   box-sizing: border-box;
@@ -310,6 +317,8 @@ input[type=button]:hover {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: url('../img/unplugged-features-img.jpg') center no-repeat;
+    background-size: cover;
 }
 
 .features p {
@@ -335,6 +344,7 @@ input[type=button]:hover {
 .features article {
   width: 55%;
   padding: 25px 0;
+  display:
 }
 
 .fontawesome-icon {
@@ -355,7 +365,7 @@ input[type=button]:hover {
 }
 
 .reviews .content-wrapper {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .reviews h2 {
@@ -365,6 +375,19 @@ input[type=button]:hover {
 .reviews h3 {
   width: 100%;
 }
+
+.reviews h4 {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.reviews article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 
 #reviews-img {
 
@@ -385,6 +408,7 @@ input[type=button]:hover {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
@@ -393,6 +417,7 @@ input[type=button]:hover {
   align-items: center;
   flex-flow: row wrap;
   padding-bottom: 100px;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -407,6 +432,7 @@ input[type=button]:hover {
   align-items: center;
   flex-flow: row wrap;
   padding: 100px 0;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -577,8 +603,13 @@ footer .footer-content {
     display: none;
   }
 
+header figure {
+  width: 30%;
+}
 /*Hero Area*/
-
+.hero-area h1 {
+  font-size: 3em;
+}
 /*Aside*/
 aside .content-wrapper {
   width: 100%;
@@ -593,6 +624,10 @@ aside .content-wrapper .form {
   width: 40%;
   margin: 0;
   padding: 0;
+}
+
+aside p {
+  font-size: 0.875em;
 }
 
 /*Features*/
@@ -610,13 +645,33 @@ aside .content-wrapper .form {
 }
 
 /*Reviews*/
+.reviews .content-wrapper {
+  padding: 100px 0;
+}
+
 .reviews article {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
+.reviews h4 {
+  font-size: 1.5em;
+  padding: 0;
+}
+
+.reviews p {
+  font-size: 0.875em;
+}
+
+.reviews figure {
+  width: 48%;
+}
+
+
 .reviews article div {
-  width: 300px;
+  width: 48%;
+  align-items: flex-start;
 }
 
 
@@ -704,9 +759,15 @@ footer .copyright {
   max-width: 80%;
 }
 
+/*Header*/
+header figure {
+  width: 23%;
+}
+
 /*Hero Area*/
 .hero-area h1 {
   width: 70%;
+  font-size: 3.75em;
 }
 
 /*Aside*/
@@ -719,7 +780,20 @@ aside .content-wrapper.form {
   width: 31%;
 }
 
+aside h4 {
+  margin: 0;
+}
+
+aside p {
+  font-size: 1.125em;
+  margin: 0;
+}
+
 /*Feature*/
+.features .content-wrapper {
+  padding: 100px 0;
+}
+
 .features h3 {
   width: 75%;
 }
@@ -731,9 +805,26 @@ aside .content-wrapper.form {
 
 /*Reviews*/
 .reviews article div {
-  width: 50%;
+  width: 45%;
 }
 
+.reviews figure {
+  width: 45%;
+}
+
+.reviews h3 {
+  font-size: 2.25em;
+  padding-bottom: 50px;
+}
+
+.reviews h4 {
+  font-size: 1.875em;
+  width: 70%;
+}
+
+.reviews p {
+  font-size: 1.125em;
+}
 
 
 /* ==========================================================================
