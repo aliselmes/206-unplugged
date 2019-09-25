@@ -498,12 +498,29 @@ footer .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 50px 0 25px 0;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 55%;
+}
+
+.social-icons i {
+  color: #e2e3ed;
+}
+
+.social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -714,6 +731,18 @@ footer .content-wrapepr {
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.social-icons p {
+  margin: 0 20px;
 }
 
 
